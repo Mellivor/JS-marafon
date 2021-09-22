@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1619266465172-02a857c3556d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80');
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+.container{
+width: 90%;
+display: flex;
+justify-content: space-between
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s ease-in-out .3s;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 85vh;
+    flex: 1;
+    margin: 0px 0px 0px 10px;
+    position: relative;
+ cursor: pointer;
+
+}
+
+.slide h3 {
+font-size: 30px;
+position: absolute;
+bottom: 20px;
+left: 20px;
+margin: 0px;
+opacity: 0;
+}
+
+.slide.active {
+    transition: 4s ease-in-out .3s;
+    border-radius: 6px;
+    flex: 15;
+    opacity: 1;
+}
+.slide.active h3{
+    transition: 4s ease-in-out .3s;
+    opacity: 1;
+}
