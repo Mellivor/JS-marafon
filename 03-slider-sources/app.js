@@ -2,19 +2,21 @@ const upButton = document.querySelector('.up-button')
 
 const downButton = document.querySelector('.down-button')
 
-const sidebar = document.querySelector('.sidebar')
+const first = document.querySelector('.first')
 
-const mainSlide = document.querySelector('.main-slide')
+const second = document.querySelector('.second')
+
+const third = document.querySelector('.third')
+
 
 const container = document.querySelector('.container')
 
 const height = container.clientHeight
 
-const slideCount = mainSlide.querySelectorAll('div').length
+const slideCount = first.querySelectorAll('div').length
 
 let activeSliedIndex = 0
 
-sidebar.style.top = `-${(slideCount - 1) * 100}vh`
 
 let changeSlied = (dir) => {
     if (dir === 'up') {
@@ -29,13 +31,15 @@ let changeSlied = (dir) => {
         }
     }
 
-mainSlide.style.transform = `translateY(
+first.style.transform = `translateY(
     -${activeSliedIndex * height}px)`
 
-sidebar.style.transform = `translateY(
-    ${activeSliedIndex * height}px)`
+second.style.transform = `translateY(
+        ${activeSliedIndex * height}px)`
 
-}
+third.style.transform = `translateY(
+            -${activeSliedIndex * height}px)`
+    }
 
 
 upButton.addEventListener('click', () => {
