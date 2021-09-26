@@ -1,6 +1,6 @@
 const board = document.querySelector('#board')
 
-const charList ='DmitroisthebestprograisteverX'
+const charList ='DmitroisthebestprogramisteverX'
 
 const colors = ['rgb(199, 22, 140)','rgb(11, 161, 161)','rgb(184, 65, 65)','rgb(77, 209, 37)','rgb(219, 155, 16)','rgb(110, 0, 0)','rgb(22, 25, 199)']
 
